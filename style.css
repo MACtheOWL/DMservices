@@ -1,0 +1,269 @@
+/* General Styles */
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #111; /* Dark background */
+    color: white; /* White text */
+    font-size: larger;
+
+}
+
+/* Sidebar Navigation */
+.navbar {
+    width: 250px;
+    background-color: #000; /* Pure black */
+    position: fixed;
+    height: 100%;
+    padding-top: 20px;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease-in-out; /* Smooth animation */
+    border-left: 5px solid transparent;
+    font-size: larger;
+}
+
+.navbar a:hover {
+    padding-left: 65px; /* Moves text slightly to the right */
+    transform: scale(1.5); /* Expands the link */
+    color: #e40000; /* Brighter red on hover */
+}
+
+/* Page Content */
+.content {
+    margin: auto;
+
+}
+
+/* Headings */
+h1 {
+    color: #ffffff; /* Blood red headings */
+    text-shadow: 2px 2px 5px #a10000; /* Red glow effect */
+}
+
+/* Links */
+a {
+    color: #ff4444; /* Light red links */
+}
+
+
+
+/* Logo Styling */
+.logo {
+    width: 120px;  /* Adjust size */
+    height: 120px; /* Ensure it's circular */
+    border-radius: 50%; /* Makes it circular */
+    display: block;
+    margin: 10px auto; /* Center it */
+    border: 2px solid #470000; /* Red border */
+}
+
+/* Rules Page - Box Links */
+.conditions-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+    gap: 60px; /* Increase space between boxes */
+    padding: 30px; /* Add extra padding around the container */
+    grid-template-rows: repeat(2, auto); /* 2 rows */
+}
+
+/* Box Style */
+.character-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 40px; /* Space between character boxes */
+    justify-content: center; /* Center the grid */
+    padding: 20px;
+}
+
+.character-box {
+    width: 300px; /* Box width */
+    height: 108px;
+    background-color: #660000;
+    color: white;
+    display: flex; /* Use flexbox inside each box */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    border: 2px solid #a70000;
+    padding: 15px;
+}
+
+
+.character-box h2 {
+    margin-bottom: 20px; /* Space between title and table */
+}
+/* Hover Effect */
+.character-box:hover {
+
+    transform: scale(1.05); /* Slightly grow */
+}
+
+
+
+
+/* Box Style */
+.rule-box {
+    width: 300px; /* Increase box width */
+    height: Auto; /* Auto height based on content */
+    background-color: #660000; /* Dark red */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    font-size: 28px; /* Make text a little larger */
+    font-weight: bold;
+    border-radius: 15px; /* Rounded edges */
+    text-decoration: none; /* Remove underline */
+    transition: 0.3s ease-in-out;
+    border: 5px solid #ffffff; /* Slightly brighter red border */
+    padding: 25px;
+    text-align: center;
+}
+
+.rule-box h2 {
+    margin-bottom: 20px; /* Space between title and table */
+}
+/* Hover Effect */
+.rule-box:hover {
+
+    transform: scale(1.25); /* Slightly grow */
+}
+
+
+
+table {
+    width: 1000px;
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #a0a0a0;
+    text-align: center;
+}
+
+th {
+    background-color: #440000;
+}
+
+.class-table {
+    max-width: 800px; /* Adjust width as needed */
+    margin: auto; /* Center the table */
+    padding: 15px;
+
+    border-radius: 8px;
+    overflow-x: auto; /* Allows scrolling on small screens */
+}
+
+.class-table table {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 14px; /* Smaller text */
+}
+
+.class-table th,
+.class-table td {
+    border: 1px solid #444;
+    padding: 6px; /* Reduced padding */
+    text-align: center;
+}
+
+.class-table thead {
+    background-color: #333;
+}
+
+.class-table th {
+    font-weight: bold;
+    font-size: 13px; /* Slightly smaller headers */
+}
+
+.class-table tbody tr:nth-child(odd) {
+    background-color: #292929;
+}
+
+.class-table tbody tr:nth-child(even) {
+    background-color: #1c1c1c;
+}
+
+
+.class-table td:first-child,
+.class-table th:first-child {
+    font-weight: bold;
+}
+
+.class-table a {
+    text-decoration: none;   /* Removes underline */
+    color: white;            /* Sets text color to white */
+}
+
+.class-table a:hover {
+    color: red;              /* Changes text color to red on hover */
+}
+
+.starting-class-table {
+    font-size: smaller;
+
+
+    max-height: 100px;;
+    
+}
+
+.starting-class-table th {
+    font-weight: bold;
+    font-size: 13px; /* Slightly smaller headers */
+}
+
+.starting-class-table tbody tr:nth-child(odd) {
+    background-color: #292929;
+}
+
+.class-table tbody tr:nth-child(even) {
+    background-color: #1c1c1c;
+}
+
+.class-name{
+    color: white;
+    
+}
+
+.spellcasting-table{
+
+    font-size: small;
+}
+
+.metamagic_table{
+    margin: auto;
+}
+
+.getridofit{
+    color: #111;
+}
+
+.warning{
+    margin: auto;
+    font-size: xx-large;
+}
+
+
+
+
+
