@@ -300,6 +300,18 @@ th {
     font-size: large;
 }
 
+.image-container {
+    text-align: center; /* Centers the image */
+    margin-top: 20px;
+}
+
+.weapon-image {
+    width: 30%; /* Adjust size as needed */
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px; /* Optional rounded corners */
+}
+
 
 
 
