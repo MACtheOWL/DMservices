@@ -17,24 +17,26 @@ body {
     position: fixed;
     height: 100%;
     padding-top: 20px;
+    
 
 }
 
 .navbar a {
     display: block;
     color: white;
-    padding: 15px;
+    padding: 10px;
     text-decoration: none;
     font-weight: bold;
     transition: 0.3s ease-in-out; /* Smooth animation */
     border-left: 5px solid transparent;
-    font-size: large;
+    font-size: larger;
 }
 
 .navbar a:hover {
-    padding-left: 65px; /* Moves text slightly to the right */
+    padding-left: 50px; /* Moves text slightly to the right */
     transform: scale(1.3); /* Expands the link */
     color: #e40000; /* Brighter red on hover */
+
 }
 
 /* Page Content */
@@ -63,8 +65,8 @@ h3 {
 
 /* Logo Styling */
 .logo {
-    width: 120px;  /* Adjust size */
-    height: 120px; /* Ensure it's circular */
+    width: 80px;  /* Adjust size */
+    height: 80px; /* Ensure it's circular */    
     border-radius: 50%; /* Makes it circular */
     display: block;
     margin: 10px auto; /* Center it */
@@ -78,6 +80,7 @@ h3 {
     gap: 60px; /* Increase space between boxes */
     padding: 30px; /* Add extra padding around the container */
     grid-template-rows: repeat(2, auto); /* 2 rows */
+    margin-left: 200px;
 }
 
 /* Box Style */
@@ -87,10 +90,11 @@ h3 {
     gap: 40px; /* Space between character boxes */
     justify-content: center; /* Center the grid */
     padding: 20px;
+    margin-left: 100px;
 }
 
 .character-box {
-    width: 300px; /* Box width */
+    width: 250px; /* Box width */
     height: 108px;
     background-color: #660000;
     color: white;
@@ -107,6 +111,9 @@ h3 {
     padding: 15px;
 }
 
+.center{
+    margin: auto;
+}
 
 .character-box h2 {
     margin-bottom: 20px; /* Space between title and table */
@@ -136,7 +143,7 @@ h3 {
     border-radius: 15px; /* Rounded edges */
     text-decoration: none; /* Remove underline */
     transition: 0.3s ease-in-out;
-    border: 5px solid #ffffff; /* Slightly brighter red border */
+
     padding: 25px;
     text-align: center;
 }
@@ -269,6 +276,9 @@ th {
     font-size: xx-large;
 }
 
+.weapon-table{
+    margin-left: 150px;
+}
 
 
 
