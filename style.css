@@ -108,7 +108,7 @@ h3 {
 
 .character-box {
     width: 250px; /* Box width */
-    height: 108px;
+    height: 50px;
     background: linear-gradient(to top, #a00000, #530000);
     color: white;
     display: flex; /* Use flexbox inside each box */
