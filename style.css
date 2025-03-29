@@ -7,8 +7,19 @@ body {
     background-color: #111; /* Dark background */
     color: white; /* White text */
     font-size: larger;
+    background-color: #111;
+    background-size: cover;        /* Makes the image cover the entire viewport */
+    background-repeat: no-repeat;   /* Prevents the image from repeating */
+    background-position: center;    /* Centers the image */
+    background-attachment: fixed;   /* Keeps the image fixed while scrolling */
 
 }
+
+html, body {
+    height: 100%;  /* Ensure both html and body take up the full height of the page */
+    margin: 0;     /* Remove default margin */
+    padding: 0;    /* Remove default padding */
+  }
 
 /* Sidebar Navigation */
 .navbar {
@@ -20,6 +31,8 @@ body {
     
 
 }
+
+
 
 .navbar a {
     display: block;
@@ -49,7 +62,7 @@ body {
 /* Headings */
 h1 {
     color: #ffffff; /* Blood red headings */
-    text-shadow: 2px 2px 5px #a10000; /* Red glow effect */
+    text-shadow: 3px 3px 5px #f30000; /* Red glow effect */
 }
 
 /* Links */
@@ -96,7 +109,7 @@ h3 {
 .character-box {
     width: 250px; /* Box width */
     height: 108px;
-    background-color: #660000;
+    background: linear-gradient(to top, #a00000, #530000);
     color: white;
     display: flex; /* Use flexbox inside each box */
     align-items: center;
@@ -107,7 +120,8 @@ h3 {
     border-radius: 15px;
     text-decoration: none;
     transition: 0.3s ease-in-out;
-    border: 2px solid #a70000;
+    font-size: xx-large;
+
     padding: 15px;
 }
 
@@ -121,8 +135,10 @@ h3 {
 /* Hover Effect */
 .character-box:hover {
 
-    transform: scale(1.05); /* Slightly grow */
+    transform: scale(1.15); /* Slightly grow */
 }
+
+
 
 
 
@@ -131,7 +147,8 @@ h3 {
 .rule-box {
     width: 300px; /* Increase box width */
     height: Auto; /* Auto height based on content */
-    background-color: #660000; /* Dark red */
+    background: linear-gradient(to top, #a00000, #530000);
+
     color: white;
     display: flex;
     flex-direction: column;
@@ -154,7 +171,7 @@ h3 {
 /* Hover Effect */
 .rule-box:hover {
 
-    transform: scale(1.25); /* Slightly grow */
+    transform: scale(1.15); /* Slightly grow */
 }
 
 
@@ -173,7 +190,8 @@ th, td {
 }
 
 th {
-    background-color: #440000;
+    background: linear-gradient(to top, #420000, #8d0000);
+
 }
 
 .class-table {
@@ -278,6 +296,8 @@ th {
 
 .weapon-table{
     margin-left: 150px;
+    background: linear-gradient(to top, #2b2b2b, #000000);
+    font-size: large;
 }
 
 
