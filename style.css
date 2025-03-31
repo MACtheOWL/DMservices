@@ -323,59 +323,59 @@ th {
 @media (max-width: 768px) {
     /* Rule Boxes */
     .rule-box {
-        width: 50%; /* Shrinks rule box size to half */
-        font-size: 14px; /* Shrinks text size */
-        padding: 15px;
+        width: 70%; /* Shrinks rule box size to half */
+        font-size: 18px; /* Shrinks text size */
+        padding: 10px;
         margin: auto; /* Centers the rule box */
     }
 
     /* Character Boxes */
     .character-box {
         width: 130%; /* Shrinks character boxes to 30% */
-        font-size: 14px; /* Shrinks text inside character boxes */
+        font-size: 18px; /* Shrinks text inside character boxes */
         padding: 10px; /* Adjusts padding for better fit */
     }
 
     /* Tables */
     table {
-        width: 50%; /* Ensures tables take full width */
-        font-size: 12px; /* Shrinks text size */
+        width: 70%; /* Ensures tables take full width */
+        font-size: 16px; /* Shrinks text size */
         margin-left: 0; /* Tables are right up against the navbar */
         padding: 0; /* Removes any extra padding */
     }
 
     th, td {
         padding: 6px; /* Reduces padding */
-        font-size: 12px; /* Reduces text size */
+        font-size: 16px; /* Reduces text size */
     }
 
     .class-table {
-        max-width: 50%; /* Ensures it takes up the full width */
+        max-width: 70%; /* Ensures it takes up the full width */
         overflow-x: auto; /* Allows scrolling if needed */
     }
 
     /* Navbar */
     .navbar {
-        width: 80px; /* Shrinks the navbar */
+        width: 100px; /* Shrinks the navbar */
         padding-top: 10px; /* Adjusts navbar padding */
     }
 
     .navbar a {
-        font-size: small; /* Shrinks font size of navbar links */
+        font-size: 16px; /* Shrinks font size of navbar links */
         padding: 8px;
         text-align: center;
     }
 
     .logo {
-        width: 50px; /* Shrinks the logo */
-        height: 50px;
+        width: 40px; /* Shrinks the logo */
+        height: 40px;
     }
 
     /* Adjust grid layout in mobile */
     .conditions-container,
     .character-container {
         grid-template-columns: 1fr; /* Single column layout */
-        gap: 20px;
+        gap: 10px;
         padding: 10px;
         margin: auto;
     }
