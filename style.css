@@ -312,6 +312,20 @@ th {
     border-radius: 10px; /* Optional rounded corners */
 }
 
+.grid-image {
+    max-width: 300px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: auto;
+    transition: transform 0.7s ease-in-out; /* Smooth transition effect */
+}
+
+.grid-image:hover {
+    transform: scale(1.7); /* Increase size by 1.5x */
+}
+
 
 
 
