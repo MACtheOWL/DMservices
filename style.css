@@ -143,38 +143,32 @@ h3 {
 
 
 
-/* Box Style */
 .rule-box {
-    width: 300px; /* Increase box width */
-    height: Auto; /* Auto height based on content */
+    width: 300px; /* Keep original size */
+    height: auto;
     background: linear-gradient(to top, #a00000, #530000);
-
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     text-align: center;
-    font-size: 28px; /* Make text a little larger */
+    font-size: 28px; /* Keep original size */
     font-weight: bold;
-    border-radius: 15px; /* Rounded edges */
-    text-decoration: none; /* Remove underline */
+    border-radius: 15px;
+    text-decoration: none;
     transition: 0.3s ease-in-out;
-
     padding: 25px;
-    text-align: center;
+}
+
+/* Hover Effect */
+.rule-box:hover {
+    transform: scale(1.15);
 }
 
 .rule-box h2 {
     margin-bottom: 20px; /* Space between title and table */
 }
-/* Hover Effect */
-.rule-box:hover {
-
-    transform: scale(1.15); /* Slightly grow */
-}
-
-
 
 table {
     width: 1000px;
@@ -325,7 +319,64 @@ th {
 .grid-image:hover {
     transform: scale(1.7); /* Increase size by 1.5x */
 }
+/* Mobile Mode */
+@media (max-width: 768px) {
+    /* Rule Boxes */
+    .rule-box {
+        width: 50%; /* Shrinks rule box size to half */
+        font-size: 14px; /* Shrinks text size */
+        padding: 15px;
+        margin: auto; /* Centers the rule box */
+    }
 
+    /* Character Boxes */
+    .character-box {
+        width: 130%; /* Shrinks character boxes to 30% */
+        font-size: 14px; /* Shrinks text inside character boxes */
+        padding: 10px; /* Adjusts padding for better fit */
+    }
 
+    /* Tables */
+    table {
+        width: 50%; /* Ensures tables take full width */
+        font-size: 12px; /* Shrinks text size */
+        margin-left: 0; /* Tables are right up against the navbar */
+        padding: 0; /* Removes any extra padding */
+    }
 
+    th, td {
+        padding: 6px; /* Reduces padding */
+        font-size: 12px; /* Reduces text size */
+    }
 
+    .class-table {
+        max-width: 50%; /* Ensures it takes up the full width */
+        overflow-x: auto; /* Allows scrolling if needed */
+    }
+
+    /* Navbar */
+    .navbar {
+        width: 80px; /* Shrinks the navbar */
+        padding-top: 10px; /* Adjusts navbar padding */
+    }
+
+    .navbar a {
+        font-size: small; /* Shrinks font size of navbar links */
+        padding: 8px;
+        text-align: center;
+    }
+
+    .logo {
+        width: 50px; /* Shrinks the logo */
+        height: 50px;
+    }
+
+    /* Adjust grid layout in mobile */
+    .conditions-container,
+    .character-container {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 20px;
+        padding: 10px;
+        margin: auto;
+    }
+}
