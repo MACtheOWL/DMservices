@@ -78,13 +78,29 @@ h3 {
 
 /* Logo Styling */
 .logo {
-    width: 80px;  /* Adjust size */
-    height: 80px; /* Ensure it's circular */    
-    border-radius: 50%; /* Makes it circular */
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
     display: block;
-    margin: 10px auto; /* Center it */
-    border: 2px solid #470000; /* Red border */
+    margin: 10px auto;
+    border: 2px solid #470000;
+    transition: filter 0.3s; /* Only filter transitions */
 }
+
+/* Stop hover transform on logo link specifically */
+.logo-link:hover {
+    transform: none !important;
+}
+
+.logo-link {
+    display: inline-block;
+}
+
+.logo:hover {
+    filter: brightness(1.1);
+}
+
+
 
 /* Rules Page - Box Links */
 .conditions-container {
